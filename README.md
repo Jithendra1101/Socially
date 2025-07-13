@@ -41,44 +41,24 @@
 
 ---
 
-## 📂 Repository Structure
-
-nextjs-course/
-├── prisma/ # Database schema & migrations
-├── public/ # Static assets (e.g. images, favicon)
-├── src/
-│ ├── app/ # Next.js App Router routes & layouts
-│ ├── components/ # Reusable UI components
-│ ├── lib/ # Utility functions and services
-│ ├── styles/ # Global styles & Tailwind configs
-│ └── types/ # TypeScript interfaces/types
-├── .env.example # Template for required ENV variables
-├── next.config.mjs
-├── tailwind.config.ts
-├── tsconfig.json
-├── package.json
-└── README.md # ← You’re here!
-
-yaml
-Copy
-Edit
-
 ---
 
 ## 🔧 Setup Instructions
 
 Follow these steps to run the project locally:
 
-### 1. Clone the repository
+
 
 ```bash
-git clone https://github.com/burakorkmez/nextjs-course.git
+git clone https://github.com/Jithendra1101/Socially
 cd nextjs-course
+
 2. Install dependencies
 bash
 Copy
 Edit
 npm install
+
 3. Configure environment variables
 Copy the .env template file:
 
@@ -95,6 +75,7 @@ NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
 CLERK_SECRET_KEY=
 DATABASE_URL=
 UPLOADTHING_TOKEN=
+
 4. Initialize the database
 Run the Prisma migration (and optionally seed the database):
 
@@ -102,13 +83,14 @@ bash
 Copy
 Edit
 npx prisma migrate dev
-# Optional:
 npx prisma db seed
+
 5. Launch the development server
 bash
 Copy
 Edit
 npm run dev
+
 6. Explore the app
 Open your browser and visit:
 👉 http://localhost:3000
